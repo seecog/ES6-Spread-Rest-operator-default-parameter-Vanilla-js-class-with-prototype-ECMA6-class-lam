@@ -1,0 +1,35 @@
+<html>
+
+<script>
+//First occurance of logic is provided by find
+//find, findIndex , Array.from , 
+let arr = [11,1,23,44,52];
+let findItem = arr.find(function(x){
+return x%2==0;
+})
+console.log('The find item is ',findItem)
+
+//filter gives the list of items following the condition
+let findArr = arr.filter(function(x){
+return x%2==0;
+})
+console.log('The find array is ',findArr)
+
+//findIndex
+let findIndex = arr.findIndex(function(x){
+return x%2==0;
+})
+console.log('The find array is ',findIndex)
+
+//Array.from
+let str = "Sahin";
+let x1 = Array.from(str);
+//console.log('The new array is ',x1);
+
+//iterate through x in <arr>
+arr.forEach(function(c){
+console.log("==> ",c)
+})
+
+</script>
+</html>

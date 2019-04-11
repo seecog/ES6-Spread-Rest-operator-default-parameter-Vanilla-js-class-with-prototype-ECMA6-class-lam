@@ -1,0 +1,22 @@
+<html>
+
+<script>
+//create a class Person. The data members are name,age,salary.
+//ES4
+var Person = function(name,age,sal){
+this.name = name;//current object ref
+this.age = age;
+this.sal = sal;
+}
+
+Person.prototype.getDetails = function(){
+    return `Name is ${this.name} , age is ${this.age} , Salary is ${this.sal}`
+}
+
+var ob1 = new Person("Mohan",21,2323);
+console.log('The first object details is ',ob1)
+//NOte : If u call afunction without parenthesis , return defination
+
+</script>
+
+</html>

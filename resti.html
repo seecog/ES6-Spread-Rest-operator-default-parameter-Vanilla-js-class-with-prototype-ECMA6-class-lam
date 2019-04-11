@@ -1,0 +1,31 @@
+<html>
+
+<script>
+//ECMA4/Plain javascript , vanilla js
+function totalMarks(m,s,r){
+console.log('The total marks is ',(m+s+r))
+}
+//totalMarks(90,99,98);
+
+function totalMarks2(){
+var s = 0;
+for(var i=0;i<arguments.length;i++){
+s = s+arguments[i];
+}
+console.log('The new total marks is ',s);
+}
+totalMarks(90,88,98,78,87);
+
+function totalMarks3(...marks){//putting(resting) all elements into array
+var s = 0;
+for(var i=0;i<marks.length;i++){
+s = s+marks[i];
+}
+console.log('The new total marks is ',s);
+}
+totalMarks3(90,88,98,78,87);
+//rest
+
+</script>
+
+</html>

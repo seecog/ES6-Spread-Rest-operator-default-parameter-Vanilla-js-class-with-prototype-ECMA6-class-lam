@@ -1,0 +1,21 @@
+<html>
+
+<script>
+function show(name,age){
+    if(name==undefined){
+        name = "Chotu"
+    }
+    if(age==undefined){
+        age = 20;
+    }
+console.log("The name is "+name+" and age is "+age);
+}
+show();
+
+// ES6
+function show(name="Chotu",age=20){
+   console.log("The name is "+name+" and age is "+age); 
+}
+show("Sohan");
+</script>
+</html>

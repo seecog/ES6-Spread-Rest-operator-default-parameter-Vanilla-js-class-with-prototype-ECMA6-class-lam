@@ -1,0 +1,32 @@
+<html>
+
+<script>
+//
+
+var Employee = function(name,department,salary,dateOfJoining,dateOfBirth){
+this.name = name;
+this.department = department;
+this.salary = salary;
+this.dateOfJoining = dateOfJoining;
+this.dateOfBirth = dateOfBirth;
+}
+
+//extend the classw ith help of prototype
+Employee.prototype.getTotalWorkingYears = function(){
+    var tot = new Date().getFullYear()-this.dateOfJoining;
+    return `Total exp is ${tot} `
+}
+
+Employee.prototype.getTotalAge = function(){
+    var tot = new Date().getFullYear() - this.dateOfBirth;
+    return `The age is ${tot}`;
+}
+
+var ob1 = new Employee("Mohan","Java",1400000,2014,1999);
+var tExp = ob1.getTotalWorkingYears();
+console.log('The total exp is '+tExp);
+
+
+
+</script>
+</html>

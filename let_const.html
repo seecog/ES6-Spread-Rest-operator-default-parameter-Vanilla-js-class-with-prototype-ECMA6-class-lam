@@ -1,0 +1,47 @@
+
+
+
+<html>
+
+<script>
+//var has function scoped , whereas let is block scoped
+//let is mutable but not const
+
+const b =  22;//It is not mutable
+//let is mutable
+b=34;
+
+
+function driverLicence(stt){
+
+//try to access the let outside the if block
+
+let namee;
+let age;
+if(stt){
+    namee = "Mohan";
+    age = 21;
+    
+}
+console.log('The driver name is '+namee+"--"+age);
+
+
+/*
+if(stt){
+    var namee = "Mohan";
+    var age = 21;
+    
+}
+console.log('The driver name is '+namee+"--"+age);
+
+if(stt){
+    let namee = "Mohan";
+    let age = 21;
+
+}
+console.log('The driver name is '+namee+"--"+age);*/
+}
+driverLicence(true);
+
+</script>
+</html>

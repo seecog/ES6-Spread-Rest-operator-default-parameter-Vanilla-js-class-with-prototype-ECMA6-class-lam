@@ -1,0 +1,51 @@
+<html>
+
+<script>
+
+function show(){
+    console.log('We all are indians')
+}
+show();
+
+let show2 = ()=>{
+    console.log('We all are indians')
+}
+show2();
+
+//arg
+
+function add(a,b){
+    return (a+b);
+}
+let ans1=add(2,5)
+console.log('The main sum is ',ans1);
+//es6
+let add2 = (a,b)=>{
+console.log('The sum is ',(a+b))
+}
+add2(3,4);
+
+//with one return
+let avg=(p,c,m)=>((p+c+m)/3)
+
+let ans = avg(99,98,97);
+console.log('The average is ',ans);
+
+
+//callback function can also be used as arrow function
+/*
+v
+let findData = arr1.find(function(x){
+    return x%2==0;
+})
+console.log('The find data is ',findData)
+*/
+//new
+var arr1 = [1,4,2,3]
+let findData = arr1.find((x)=>{
+    return x%2==0;
+})
+console.log('The find data is ',findData)
+</script>
+
+</html>
